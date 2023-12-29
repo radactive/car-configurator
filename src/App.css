@@ -1,0 +1,53 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.configurator {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.configurator__head {
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.configurator__section {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  margin-top: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.configurator__section__values {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.configurator__section__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item.item--active{
+  color: white;
+}
+
+.item__dot{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: solid 1px #999999;
+}
